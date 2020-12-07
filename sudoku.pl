@@ -9,7 +9,7 @@
        6 x 6 grid with 3 x 2 mini-blocks
 
    Task
-   ======
+   ====
    Generalize your sudoku solution generator using
    a new predicate gen_suduko below which supports
    different variations of sudoku puzzles, based on
@@ -122,7 +122,6 @@ block_columns([],B_R,B_C,Bs,Rs) :-
 
 % example query: replace rectangle_suduko(Prob, Rows) with any suduko
 query(Prob,Rows,N,B_R,B_C) :- rectangle_suduko(Prob, Rows), gen_sudoku(Rows,N,B_R,B_C), maplist(portray_clause, Rows).
-
 
 /*
   N - size of entire block of N x N
